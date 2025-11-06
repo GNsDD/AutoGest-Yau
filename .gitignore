@@ -1,0 +1,15 @@
+# Ignorar carpetas de caché y datos personales de Windows (lo que te está dando error)
+AppData/
+C:/Users/
+Downloads/
+
+# Ignorar entornos virtuales de Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Ignorar archivos de registro y bases de datos locales
+*.log
+*.db
+tramites.db
