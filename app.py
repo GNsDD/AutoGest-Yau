@@ -11,7 +11,7 @@ from datetime import datetime
 from keras.models import load_model
 import pandas as pd
 
-# === CONFIG: TEMA CLARO FORZADO ===
+# === TEMA CLARO ===
 st.set_page_config(
     page_title="AutoGest-Yau",
     layout="wide",
@@ -19,7 +19,7 @@ st.set_page_config(
     menu_items={'Get Help': None, 'Report a bug': None}
 )
 
-# === CSS: TEMA CLARO + CENTRADO + SIN DUPLICADOS ===
+# === CSS  ===
 st.markdown("""
 <style>
     /* TEMA CLARO FORZADO */
@@ -126,7 +126,7 @@ def predecir():
 
 # === STREAMLIT ===
 def main():
-    # HEADER CENTRADO CON 3 COLUMNAS
+    # HEADER CENTRADO 
     col1, col2, col3 = st.columns([1, 3, 1])
     with col1:
         try:
@@ -184,7 +184,7 @@ def main():
                     except:
                         st.error("Flask no responde. Abre otra terminal: `python app.py`")
 
-    # === TAB 2: DASHBOARD (1 SOLA TABLA) ===
+    # === TAB 2: DASHBOARD ===
     with tab2:
         st.subheader("Historial de Trámites")
         try:
